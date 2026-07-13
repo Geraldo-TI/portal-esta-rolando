@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hub Multimodal - Portal Está Rolando</title>
+    <!-- CSS Vanilla Import -->
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <!-- Navegação Temporária para Validação do CPO -->
+    <nav style="background: #1f2937; padding: 1rem; text-align: center; font-family: sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="/" style="color: #fff; text-decoration: none; font-weight: bold;">🏠 Home</a>
+        <a href="/blog-editorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📰 Blog</a>
+        <a href="/hub-multimodal.html" style="color: #10b981; text-decoration: none; font-weight: bold;">🧰 Hub</a>
+        <a href="/ferramentas.html" style="color: #fff; text-decoration: none; font-weight: bold;">🛠️ Ferramentas</a>
+        <a href="/conhecimento.html" style="color: #fff; text-decoration: none; font-weight: bold;">📚 Conhecimento</a>
+        <a href="/tutorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📄 Tutorial</a>
+        <a href="/cursos.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎓 Cursos</a>
+        <a href="/captura.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎯 Captura</a>
+        <a href="/obrigado.html" style="color: #fff; text-decoration: none; font-weight: bold;">✅ Obrigado</a>
+        <a href="/lazer.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎮 Lazer</a>
+        <a href="/ajuda.html" style="color: #fff; text-decoration: none; font-weight: bold;">❓ Ajuda</a>
+    </nav>
+
+    <!-- [ELEMENTOR: Container Principal - Nível 1] -->
+    <section class="er-blog-section">
+        <div class="er-blog-container">
+            
+            <div class="er-blog-header">
+                <h1 class="er-blog-title">Central de Recursos Práticos</h1>
+                <p class="er-subtitle-center">Ferramentas diretas, materiais visuais e códigos prontos para você copiar, aplicar e otimizar seus processos de negócios imediatamente.</p>
+            </div>
+
+            <!-- Barra de Filtros Multimodais (Apenas Formatos) -->
+            <div class="er-blog-filters">
+                <a href="#" class="er-filter-btn active">Todos</a>
+                <a href="#" class="er-filter-btn">Infográficos e Mapas</a>
+                <a href="#" class="er-filter-btn">Vídeos</a>
+                <a href="#" class="er-filter-btn">Podcasts</a>
+                <a href="#" class="er-filter-btn">Livros Virtuais</a>
+            </div>
+
+            <!-- Grade de Conteúdo Prático - 3 Colunas -->
+            <div class="er-blog-grid">
+                
+                <!-- Card 1: Infográfico -->
+                <div class="er-blog-card" style="cursor: default;">
+                    <div class="er-blog-image quiz-thumb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--e-global-color-primary);"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <div class="er-blog-content" style="justify-content: space-between;">
+                        <div>
+                            <span class="er-blog-tag">Infográfico</span>
+                            <h3 class="er-blog-card-title">Mapa Mental: Fluxo de Automação de Vendas</h3>
+                            <p class="er-blog-card-desc">Visualize de forma clara e objetiva toda a estrutura de gatilhos, mensagens e transições lógicas &mdash; do lead inicial até o fechamento.</p>
+                        </div>
+                        <a href="#" class="er-btn er-btn-primary er-btn-full" style="margin-top: 1.5rem;">Baixar Infográfico (PDF) &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Vídeo -->
+                <div class="er-blog-card" style="cursor: default;">
+                    <div class="er-blog-image video-thumb">
+                        <div class="er-play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
+                    <div class="er-blog-content" style="justify-content: space-between;">
+                        <div>
+                            <span class="er-blog-tag">Vídeo Demonstrativo</span>
+                            <h3 class="er-blog-card-title">Setup Prático: Configurando seu Robô de Atendimento</h3>
+                            <p class="er-blog-card-desc">Acompanhe a tela compartilhada e veja exatamente onde clicar para conectar sua base de conhecimento à API oficial.</p>
+                        </div>
+                        <a href="#" class="er-btn er-btn-primary er-btn-full" style="margin-top: 1.5rem;">Assistir Vídeo &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Livro Virtual -->
+                <div class="er-blog-card" style="cursor: default;">
+                    <div class="er-blog-image" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8); display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ec4899;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <div class="er-blog-content" style="justify-content: space-between;">
+                        <div>
+                            <span class="er-blog-tag">Livro Virtual</span>
+                            <h3 class="er-blog-card-title">Guia Definitivo: IA para Iniciantes</h3>
+                            <p class="er-blog-card-desc">Um e-book completo com 50 páginas de puro conteúdo prático para você dar os primeiros passos na automação.</p>
+                        </div>
+                        <a href="#" class="er-btn er-btn-primary er-btn-full" style="margin-top: 1.5rem;">Baixar E-book &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

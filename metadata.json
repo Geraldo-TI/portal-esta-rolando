@@ -1,0 +1,6 @@
+{
+  "name": "Portal Está Rolando - Hero",
+  "description": "Primeira dobra desenvolvida sob a metodologia MDAVO da PhenixOne. HTML Semântico puro e CSS Vanilla.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

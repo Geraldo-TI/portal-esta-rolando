@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Interno - Portal Está Rolando</title>
+    <!-- CSS Vanilla Import -->
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <!-- Navegação Temporária para Validação do CPO -->
+    <nav style="background: #1f2937; padding: 1rem; text-align: center; font-family: sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="/" style="color: #fff; text-decoration: none; font-weight: bold;">🏠 Home Page</a>
+        <a href="/blog-editorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📰 Blog</a>
+        <a href="/hub-multimodal.html" style="color: #fff; text-decoration: none; font-weight: bold;">🧰 Hub</a>
+        <a href="/ferramentas.html" style="color: #fff; text-decoration: none; font-weight: bold;">🛠️ Ferramentas</a>
+        <a href="/conhecimento.html" style="color: #fff; text-decoration: none; font-weight: bold;">📚 Conhecimento</a>
+        <a href="/tutorial.html" style="color: #10b981; text-decoration: none; font-weight: bold;">📄 Tutorial</a>
+        <a href="/cursos.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎓 Cursos</a>
+        <a href="/captura.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎯 Captura</a>
+        <a href="/obrigado.html" style="color: #fff; text-decoration: none; font-weight: bold;">✅ Obrigado</a>
+        <a href="/lazer.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎮 Lazer</a>
+        <a href="/ajuda.html" style="color: #fff; text-decoration: none; font-weight: bold;">❓ Ajuda</a>
+    </nav>
+
+    <!-- [ELEMENTOR: Container Principal - Nível 1] 
+         Configurações sugeridas no WP: 
+         - Layout: Flexbox
+         - Direção: Row (Desktop) / Column (Mobile)
+         - Alinhamento: Flex-start
+    -->
+    <section class="er-tutorial-section">
+        <div class="er-tutorial-container">
+            
+            <!-- [ELEMENTOR: Coluna 1 Conteúdo (70%) - Nível 2] -->
+            <article class="er-tutorial-content">
+                
+                <header class="er-tutorial-header">
+                    <div class="er-tutorial-meta">
+                        <span class="er-tutorial-category">IA para Vendas</span>
+                        <span>&middot;</span>
+                        <time datetime="2023-10-24">24 de Outubro, 2023</time>
+                        <span>&middot;</span>
+                        <span>Leitura: 5 min</span>
+                    </div>
+                    <h1 class="er-tutorial-title">Como Criar uma Campanha de Vendas Completa usando o ChatGPT em 15 Minutos</h1>
+                </header>
+
+                <div class="er-tutorial-body">
+                    <p>Dominar o ChatGPT para vendas não se trata de decorar comandos complexos, mas sim de entender como estruturar o contexto correto. Neste tutorial, você vai aprender exatamente o framework que utilizamos para gerar campanhas inteiras em poucos minutos.</p>
+                    
+                    <p>O segredo está em alimentar a inteligência artificial com o contexto exato do seu produto, da dor do seu cliente e da objeção principal que você precisa quebrar.</p>
+
+                    <!-- Bloco de Engenharia de Prompt (Contêiner Destacado) -->
+                    <div class="er-prompt-box">
+                        <div class="er-prompt-header">
+                            <h3 class="er-prompt-title">Framework de Campanha (Copie e Cole)</h3>
+                            <button class="er-btn-copy" aria-label="Copiar Prompt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copiar Prompt
+                            </button>
+                        </div>
+                        <pre class="er-prompt-content">Aja como um copywriter sênior especialista em conversão.
+Preciso que você crie uma campanha de vendas para o produto [NOME DO PRODUTO].
+O público-alvo são [PÚBLICO-ALVO] que sofrem com [DOR PRINCIPAL].
+A principal objeção deles é [OBJEÇÃO].
+
+Por favor, gere:
+1. Três variações de e-mail de vendas usando o modelo AIDA.
+2. Dois roteiros curtos para vídeos no Instagram (Reels/TikTok).
+3. Cinco mensagens persuasivas para envio no WhatsApp.</pre>
+                    </div>
+                    
+                    <p>Adapte os campos entre colchetes [ ] com as informações reais do seu negócio. Quanto mais detalhado for o contexto da dor do seu cliente, mais precisa será a resposta da IA.</p>
+                </div>
+
+            </article>
+
+            <!-- [ELEMENTOR: Coluna 2 Sidebar (30%) - Nível 2] 
+                 Configurações: Sticky Box ativado no Elementor
+            -->
+            <aside class="er-tutorial-sidebar">
+                <div class="er-sidebar-card">
+                    <h3 class="er-sidebar-card-title">Quer avançar mais rápido?</h3>
+                    <p class="er-sidebar-card-desc">Conheça nossos cursos completos de IA baseados em comportamento humano e frameworks práticos.</p>
+                    <a href="#" class="er-btn er-btn-primary er-btn-full">Conhecer a Esteira de Cursos &rarr;</a>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+</body>
+</html>

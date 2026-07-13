@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Está Rolando</title>
+    <!-- CSS Vanilla Import -->
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <!-- Navegação Temporária para Validação do CPO -->
+    <nav style="background: #1f2937; padding: 1rem; text-align: center; font-family: sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="index.html" style="color: #10b981; text-decoration: none; font-weight: bold;">🏠 Home Page</a>
+        <a href="blog.html" style="color: #fff; text-decoration: none; font-weight: bold;">📰 Blog</a>
+        <a href="hub.html" style="color: #fff; text-decoration: none; font-weight: bold;">🧰 Hub</a>
+        <a href="ferramentas.html" style="color: #fff; text-decoration: none; font-weight: bold;">🛠️ Ferramentas</a>
+        <a href="conhecimento.html" style="color: #fff; text-decoration: none; font-weight: bold;">📚 Conhecimento</a>
+        <a href="tutorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📄 Tutorial</a>
+        <a href="cursos.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎓 Cursos</a>
+        <a href="captura.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎯 Captura</a>
+        <a href="obrigado.html" style="color: #fff; text-decoration: none; font-weight: bold;">✅ Obrigado</a>
+        <a href="lazer.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎮 Lazer</a>
+        <a href="ajuda.html" style="color: #fff; text-decoration: none; font-weight: bold;">❓ Ajuda</a>
+    </nav>
+
+    <!-- [ELEMENTOR: Container Principal - Nível 1] 
+         Configurações sugeridas no WP: 
+         - Layout: Flexbox
+         - Direção: Linha (Row) no Desktop / Coluna (Column) no Mobile
+         - Alinhamento: Space Between / Center
+         - Elementos: HTML semântico com classes para manter o DOM enxuto. 
+    -->
+    <header class="er-hero-section">
+        <div class="er-hero-container">
+            
+            <!-- [ELEMENTOR: Container Filho Esquerda - Nível 2] 
+                 Configurações: Flexbox -> Column -> Gap 24px 
+            -->
+            <div class="er-hero-content">
+                <span class="er-eyebrow">Portal Está Rolando &middot; IA aplicada a negócios reais</span>
+                
+                <h1 class="er-h1">Transforme IA em mais vendas, menos trabalho manual e conteúdo que gera oportunidades.</h1>
+                
+                <p class="er-subtitle">Aprenda com tutoriais simples, use modelos prontos e avance para soluções implementadas &mdash; mesmo sem experiência técnica.</p>
+
+                <div class="er-hero-actions">
+                    <a href="#form" class="er-btn er-btn-primary">Receber grátis os 10 prompts</a>
+                    <a href="#explore" class="er-btn er-btn-secondary">Explorar conteúdos gratuitos</a>
+                </div>
+                
+                <div class="er-trust-note">
+                    <small>Conteúdo prático &middot; Modelos reutilizáveis &middot; Implementação para negócios</small>
+                </div>
+            </div>
+
+            <!-- [ELEMENTOR: Container Filho Direita - Nível 2] 
+                 Configurações: Flexbox -> Column -> Alinhamento ao Centro
+            -->
+            <div class="er-hero-form-wrapper" id="form">
+                <div class="er-form-card">
+                    <p class="er-form-microcopy">
+                        Receba o Kit 10 Prompts para Vender Mais com IA. Exemplos práticos, sem jargão e prontos para adaptar. Informe seu e-mail e escolha seu principal objetivo.
+                    </p>
+                    
+                    <!-- Formulário JetEngine / Elementor nativo HTML mapping -->
+                    <form class="er-capture-form" action="#" method="POST">
+                        <div class="er-form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div class="er-form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        
+                        <div class="er-form-group">
+                            <label for="objetivo">Objetivo principal</label>
+                            <select id="objetivo" name="objetivo" required>
+                                <option value="" disabled selected>Escolha um objetivo...</option>
+                                <option value="vender_mais">Vender Mais</option>
+                                <option value="criar_conteudo">Criar Conteúdo</option>
+                                <option value="automatizar">Automatizar</option>
+                                <option value="aprender_do_zero">Aprender do Zero</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="er-btn er-btn-primary er-btn-full">Receber o Kit Grátis</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- [ELEMENTOR: Container Principal Seção II - Nível 1]
+         Configurações sugeridas no WP:
+         - Layout: Flexbox ou CSS Grid (Nativo Elementor)
+         - Direção: Column (Title + Grid)
+    -->
+    <section class="er-pain-section" id="explore">
+        <div class="er-pain-container">
+            <div class="er-pain-header">
+                <h2 class="er-h2">O que você precisa resolver com Inteligência Artificial hoje?</h2>
+                <p class="er-subtitle-center">Escolha o seu objetivo e acesse os tutoriais, modelos e soluções ideais para o seu momento &mdash; sem complicações.</p>
+            </div>
+
+            <!-- [ELEMENTOR: Container Grid - Nível 2]
+                 Configurações: CSS Grid -> 4 Colunas (Desktop) -> 2 Colunas (Tablet) -> 1 Coluna (Mobile)
+                 Gap: 24px
+            -->
+            <div class="er-pain-grid">
+                
+                <!-- Card 1 -->
+                <a href="#" class="er-pain-card">
+                    <div class="er-card-icon er-icon-sales"></div>
+                    <h3 class="er-card-title">Quero Vender Mais</h3>
+                    <p class="er-card-desc">Atraia clientes, crie campanhas e automatize ofertas.</p>
+                    <span class="er-card-cta">Ver soluções de vendas &rarr;</span>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="er-pain-card">
+                    <div class="er-card-icon er-icon-content"></div>
+                    <h3 class="er-card-title">Quero Criar Conteúdo</h3>
+                    <p class="er-card-desc">Produza artigos, roteiros e postagens com menos esforço.</p>
+                    <span class="er-card-cta">Ver soluções de conteúdo &rarr;</span>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="er-pain-card">
+                    <div class="er-card-icon er-icon-automation"></div>
+                    <h3 class="er-card-title">Quero Automatizar Tarefas</h3>
+                    <p class="er-card-desc">Elimine trabalhos repetitivos e organize suas rotinas.</p>
+                    <span class="er-card-cta">Ver soluções de automação &rarr;</span>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="#" class="er-pain-card">
+                    <div class="er-card-icon er-icon-fundamentals"></div>
+                    <h3 class="er-card-title">Quero Aprender do Zero</h3>
+                    <p class="er-card-desc">Domine as ferramentas essenciais e entenda como a IA funciona.</p>
+                    <span class="er-card-cta">Iniciar aprendizado gratuito &rarr;</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- [ELEMENTOR: Container Principal Seção III - Nível 1]
+         Configurações sugeridas no WP:
+         - Layout: Flexbox ou CSS Grid (Nativo Elementor)
+         - Direção: Column (Header + Grid + Footer)
+    -->
+    <section class="er-editorial-section">
+        <div class="er-editorial-container">
+            
+            <div class="er-editorial-header">
+                <h2 class="er-h2">Tutoriais Práticos e Diretos de Inteligência Artificial</h2>
+                <p class="er-subtitle-center">Acesse nosso acervo de conteúdo aberto. Passo a passo reais, testados e sem jargões para você dominar as ferramentas que importam.</p>
+                
+                <div class="er-search-wrapper">
+                    <!-- Ícone SVG inline simulando busca -->
+                    <svg class="er-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="er-search-input" placeholder="O que você quer aprender a criar hoje com IA?" aria-label="Buscar tutoriais">
+                </div>
+            </div>
+
+            <!-- [ELEMENTOR: Container Grid - Nível 2]
+                 Configurações: CSS Grid -> 3 Colunas (Desktop) -> 2 Colunas (Tablet) -> 1 Coluna (Mobile)
+            -->
+            <div class="er-editorial-grid">
+                
+                <!-- Post 1 -->
+                <a href="#" class="er-post-card">
+                    <div class="er-post-image er-img-1"></div>
+                    <div class="er-post-content">
+                        <span class="er-post-category">IA para Vendas</span>
+                        <h3 class="er-post-title">Como Criar uma Campanha de Vendas Completa usando o ChatGPT em 15 Minutos</h3>
+                        <span class="er-post-cta">Ler tutorial completo &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="#" class="er-post-card">
+                    <div class="er-post-image er-img-2"></div>
+                    <div class="er-post-content">
+                        <span class="er-post-category">Automação</span>
+                        <h3 class="er-post-title">O Guia Passo a Passo para Automatizar suas Respostas no WhatsApp sem Gastar Nada</h3>
+                        <span class="er-post-cta">Ler tutorial completo &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="#" class="er-post-card">
+                    <div class="er-post-image er-img-3"></div>
+                    <div class="er-post-content">
+                        <span class="er-post-category">Criação de Conteúdo</span>
+                        <h3 class="er-post-title">Imagens que Vendem: Como usar o Midjourney para criar fotos de produtos incríveis</h3>
+                        <span class="er-post-cta">Ler tutorial completo &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Botão CTA Final -->
+            <div class="er-editorial-footer">
+                <a href="#" class="er-btn er-btn-secondary">Ver todos os tutoriais gratuitos</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- [ELEMENTOR: Container Principal Seção IV - Nível 1]
+         Configurações sugeridas no WP:
+         - Layout: Flexbox
+         - Direção: Column (Header + Flow)
+    -->
+    <section class="er-journey-section">
+        <div class="er-journey-container">
+            
+            <div class="er-journey-header">
+                <h2 class="er-h2">Uma Trilha Completa para o Crescimento do Seu Negócio</h2>
+                <p class="er-subtitle-center">Do conhecimento gratuito à implementação sob medida, nós acompanhamos você em cada etapa da sua evolução digital com IA.</p>
+            </div>
+
+            <!-- [ELEMENTOR: Container de Fluxo - Nível 2]
+                 Configurações: Flexbox -> Row (Desktop) / Column (Mobile)
+            -->
+            <div class="er-journey-flow">
+                
+                <!-- Passo 1 -->
+                <div class="er-step-card">
+                    <div class="er-step-number">1</div>
+                    <h3 class="er-step-title">Aprenda Gratuitamente</h3>
+                    <p class="er-step-desc">Explore nosso portal aberto, consuma tutoriais práticos e domine os conceitos fundamentais sem gastar nada.</p>
+                    <a href="#" class="er-step-link">Blog Está Rolando &rarr;</a>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="er-step-card">
+                    <div class="er-step-number">2</div>
+                    <h3 class="er-step-title">Pratique com Métodos Testados</h3>
+                    <p class="er-step-desc">Domine frameworks proprietários e kits de engenharia de prompts por meio de nossos infoprodutos focados em resultados práticos.</p>
+                    <a href="#" class="er-step-link">Esteira de Cursos &rarr;</a>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="er-step-card">
+                    <div class="er-step-number">3</div>
+                    <h3 class="er-step-title">Implemente em Escala</h3>
+                    <p class="er-step-desc">Conte com nossa mentoria e consultoria especializada para desenhar e rodar agentes autônomos personalizados para sua operação.</p>
+                    <a href="#" class="er-step-link">Serviços B2B &rarr;</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- [ELEMENTOR: Container Principal Seção V - Nível 1]
+         Configurações sugeridas no WP:
+         - Layout: Flexbox
+         - Alinhamento: Center
+         - Padding: Boxed para respiro
+    -->
+    <section class="er-cta-section">
+        <div class="er-cta-container">
+            
+            <!-- [ELEMENTOR: Container Boxed (Callout) - Nível 2]
+                 Configurações: Flexbox -> Column -> Center
+                 Estilo: Fundo Gradiente, Borda 16px, Sombra Suave
+            -->
+            <div class="er-cta-box">
+                <div class="er-cta-content">
+                    <h2 class="er-h2">Pronto para Dominar a Inteligência Artificial no Seu Negócio?</h2>
+                    <p class="er-subtitle-center">Não fique para trás. Junte-se a milhares de profissionais que estão transformando teorias complexas em resultados práticos e lucrativos todos os dias.</p>
+                </div>
+
+                <div class="er-cta-actions">
+                    <a href="#" class="er-btn er-btn-primary">Quero Começar Agora</a>
+                    <a href="#" class="er-btn er-btn-secondary">Falar com Especialista B2B</a>
+                </div>
+                
+                <span class="er-cta-microcopy">
+                    Acesso imediato a materiais gratuitos &middot; Cursos práticos &middot; Sem jargões técnicos.
+                </span>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

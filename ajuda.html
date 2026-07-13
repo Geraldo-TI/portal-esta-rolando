@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central de Ajuda - Portal Está Rolando</title>
+    <!-- CSS Vanilla Import -->
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <!-- Navegação Temporária para Validação do CPO -->
+    <nav style="background: #1f2937; padding: 1rem; text-align: center; font-family: sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="/" style="color: #fff; text-decoration: none; font-weight: bold;">🏠 Home Page</a>
+        <a href="/blog-editorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📰 Blog</a>
+        <a href="/hub-multimodal.html" style="color: #fff; text-decoration: none; font-weight: bold;">🧰 Hub</a>
+        <a href="/ferramentas.html" style="color: #fff; text-decoration: none; font-weight: bold;">🛠️ Ferramentas</a>
+        <a href="/conhecimento.html" style="color: #fff; text-decoration: none; font-weight: bold;">📚 Conhecimento</a>
+        <a href="/tutorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📄 Tutorial</a>
+        <a href="/cursos.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎓 Cursos</a>
+        <a href="/captura.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎯 Captura</a>
+        <a href="/obrigado.html" style="color: #fff; text-decoration: none; font-weight: bold;">✅ Obrigado</a>
+        <a href="/lazer.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎮 Lazer</a>
+        <a href="/ajuda.html" style="color: #10b981; text-decoration: none; font-weight: bold;">❓ Ajuda</a>
+    </nav>
+
+    <section class="er-help-section">
+        <div class="er-help-container">
+            
+            <div class="er-help-header">
+                <h1 class="er-h1">Central de Ajuda e Tira-Dúvidas</h1>
+                <p class="er-subtitle-center">Tem alguma dúvida técnica? Encontre respostas rápidas e diretas sobre ferramentas, integrações e uso dos nossos materiais.</p>
+                
+                <div class="er-help-search-wrapper">
+                    <svg class="er-help-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" class="er-help-search-input" placeholder="Digite sua dúvida técnica aqui...">
+                </div>
+            </div>
+
+            <!-- Lista FAQ Accordion -->
+            <div class="er-faq-list">
+                
+                <!-- FAQ Aberto (Ativo) -->
+                <div class="er-faq-item active">
+                    <div class="er-faq-header">
+                        <h3 class="er-faq-title">Como integro as respostas da IA no meu WhatsApp Business?</h3>
+                        <svg class="er-faq-icon" style="color: var(--e-global-color-primary);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </div>
+                    <div class="er-faq-content">
+                        <p>O processo é bastante direto. Você precisará de uma conta no provedor de API oficial (como a Meta ou Twilio) e um middleware (como Make ou n8n) para conectar a lógica do seu assistente (OpenAI/Claude) ao seu número de WhatsApp. Temos um passo a passo detalhado sobre isso na Central de Recursos.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Fechado -->
+                <div class="er-faq-item">
+                    <div class="er-faq-header">
+                        <h3 class="er-faq-title">Quais são os limites de uso da API do ChatGPT (OpenAI)?</h3>
+                        <svg class="er-faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </div>
+                    <div class="er-faq-content">
+                        <p>A OpenAI trabalha com um modelo de cobrança por uso (pay-as-you-go). Os limites iniciais variam de acordo com o "Tier" da sua conta, aumentando conforme o seu histórico de pagamentos e volume de requisições processadas.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Fechado 3 -->
+                <div class="er-faq-item">
+                    <div class="er-faq-header">
+                        <h3 class="er-faq-title">Posso compartilhar minha conta de treinamentos com minha equipe?</h3>
+                        <svg class="er-faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </div>
+                    <div class="er-faq-content">
+                        <p>Não. Os acessos aos nossos cursos e treinamentos são individuais e intransferíveis. O sistema bloqueia automaticamente logins simultâneos por motivos de segurança.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

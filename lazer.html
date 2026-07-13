@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Lazer e Descontração - Portal Está Rolando</title>
+    <!-- CSS Vanilla Import -->
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <!-- Navegação Temporária para Validação do CPO -->
+    <nav style="background: #1f2937; padding: 1rem; text-align: center; font-family: sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="/" style="color: #fff; text-decoration: none; font-weight: bold;">🏠 Home Page</a>
+        <a href="/blog-editorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📰 Blog</a>
+        <a href="/hub-multimodal.html" style="color: #fff; text-decoration: none; font-weight: bold;">🧰 Hub</a>
+        <a href="/ferramentas.html" style="color: #fff; text-decoration: none; font-weight: bold;">🛠️ Ferramentas</a>
+        <a href="/conhecimento.html" style="color: #fff; text-decoration: none; font-weight: bold;">📚 Conhecimento</a>
+        <a href="/tutorial.html" style="color: #fff; text-decoration: none; font-weight: bold;">📄 Tutorial</a>
+        <a href="/cursos.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎓 Cursos</a>
+        <a href="/captura.html" style="color: #fff; text-decoration: none; font-weight: bold;">🎯 Captura</a>
+        <a href="/obrigado.html" style="color: #fff; text-decoration: none; font-weight: bold;">✅ Obrigado</a>
+        <a href="/lazer.html" style="color: #10b981; text-decoration: none; font-weight: bold;">🎮 Lazer</a>
+        <a href="/ajuda.html" style="color: #fff; text-decoration: none; font-weight: bold;">❓ Ajuda</a>
+    </nav>
+
+    <section class="er-fun-section">
+        <div class="er-fun-container">
+            
+            <div class="er-fun-header">
+                <h1 class="er-h1">Espaço Lazer e Descontração</h1>
+                <p class="er-subtitle-center">O céu é o limite no mundo da IA. Divirta-se, desafie sua mente com nossos jogos e descubra curiosidades surpreendentes.</p>
+            </div>
+            
+            <div class="er-blog-filters" style="margin-bottom: 3rem;">
+                <a href="#" class="er-filter-btn active">Todos</a>
+                <a href="#" class="er-filter-btn">Jogos de IA</a>
+                <a href="#" class="er-filter-btn">Quizzes Interativos</a>
+                <a href="#" class="er-filter-btn">Curiosidades</a>
+            </div>
+
+            <div class="er-fun-grid">
+                
+                <!-- Coluna 1: Mini-jogo -->
+                <div class="er-fun-card" style="align-items: stretch; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 class="er-fun-title" style="margin: 0; font-size: 1.25rem;">Desafio Humano vs. Máquina</h3>
+                        <div style="background-color: #f1f5f9; padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 700; color: var(--e-global-color-text); font-size: 0.875rem;">
+                            <span style="color: var(--e-global-color-primary);">Você: 2</span> | <span style="color: #ef4444;">IA: 1</span>
+                        </div>
+                    </div>
+                    
+                    <p style="color: var(--e-global-color-text-light); margin-top: 0; margin-bottom: 1.5rem;">Adivinhe qual prompt gerou esta imagem:</p>
+                    
+                    <div style="width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 0.75rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
+                        <!-- Placeholder visual de IA -->
+                        <div style="position: absolute; width: 100%; height: 100%; opacity: 0.4; background-image: radial-gradient(circle at 50% 50%, #3b82f6 0%, transparent 60%);"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #3b82f6; z-index: 1;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    </div>
+
+                    <div class="er-poll-options">
+                        <div class="er-poll-option" style="border-radius: 9999px; text-align: center;">"Um astronauta cavalgando um cavalo em Marte, hiperrealista"</div>
+                        <div class="er-poll-option" style="border-radius: 9999px; text-align: center;">"Uma pintura a óleo renascentista de um gato astronauta"</div>
+                        <div class="er-poll-option" style="border-radius: 9999px; text-align: center;">"Fotografia 8k de uma base lunar com luzes neon"</div>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Quiz -->
+                <div class="er-fun-card" style="align-items: stretch; text-align: center; border: 2px solid #e2e8f0;">
+                    <div style="background-color: #fce7f3; color: #ec4899; width: max-content; padding: 0.25rem 1rem; border-radius: 9999px; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 auto 1.5rem auto;">Teste de Perfil</div>
+                    
+                    <h3 class="er-fun-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">Descubra qual Inteligência Artificial combina com o seu perfil comportamental</h3>
+                    
+                    <div style="background-color: var(--er-bg-light); border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem;">
+                        <p style="font-weight: 600; color: var(--e-global-color-text); margin: 0; font-size: 1.125rem;">Pergunta 1 de 5:</p>
+                        <p style="color: var(--e-global-color-text-light); margin-top: 0.5rem; margin-bottom: 0;">Como você prefere organizar suas tarefas diárias?</p>
+                    </div>
+                    
+                    <div class="er-poll-options" style="margin-bottom: auto;">
+                        <div class="er-poll-option" style="border-radius: 1rem; padding: 1rem; border-width: 2px; font-weight: 600; color: var(--e-global-color-text);">A. Em listas detalhadas e planilhas estruturadas.</div>
+                        <div class="er-poll-option" style="border-radius: 1rem; padding: 1rem; border-width: 2px; font-weight: 600; color: var(--e-global-color-text);">B. De forma visual, usando quadros ou post-its.</div>
+                        <div class="er-poll-option" style="border-radius: 1rem; padding: 1rem; border-width: 2px; font-weight: 600; color: var(--e-global-color-text);">C. Deixo fluir organicamente, resolvendo conforme aparecem.</div>
+                    </div>
+
+                    <button class="er-btn er-btn-primary er-btn-full" style="border-radius: 9999px; font-weight: 700; padding: 1rem; margin-top: 1.5rem; box-shadow: 0 4px 0 #059669;">Próxima Pergunta</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
