@@ -1,6 +1,40 @@
-{
-  "operation": "create",
-  "language": "yaml",
-  "prompt": "Crie um arquivo de workflow do GitHub Actions (deploy.yml) para um projeto Vite. O workflow deve:\n1. Rodar em cada push na branch 'main'.\n2. Usar Node.js 20.\n3. Instalar dependências (npm install).\n4. Rodar o build (npm run build).\n5. Fazer o upload do artefato da pasta 'dist'.\n6. Fazer o deploy para o GitHub Pages.\n\nCertifique-se de incluir as permissões necessárias para o GITHUB_TOKEN (contents: read, pages: write, id-token: write).",
-  "shouldRecommendSkip": false
-}
+name: Deploy Vite to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
