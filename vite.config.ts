@@ -3,9 +3,11 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/portal-esta-rolando/',
+  // O segredo está aqui: base relativa total
+  base: './', 
   plugins: [react(), tailwindcss()],
   build: {
+    outDir: 'dist',
     rollupOptions: {
       input: {
         main: './index.html',
