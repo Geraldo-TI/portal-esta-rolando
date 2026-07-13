@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // O segredo está aqui: base relativa total
-  base: './', 
+  base: './',
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist',
+    // Desativamos algumas verificações pesadas para acelerar o build
+    minify: 'esbuild',
     rollupOptions: {
       input: {
         main: './index.html',
